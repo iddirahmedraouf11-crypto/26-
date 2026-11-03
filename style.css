@@ -1,0 +1,157 @@
+
+:root {
+  --gold: #d4af37;
+  --background: #171717;
+  --card: #292929;
+  --text: #f5f5f5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--text);
+  font-family: Tahoma, Arial, sans-serif;
+  text-align: center;
+}
+
+header {
+  padding: 35px 15px;
+  background: linear-gradient(135deg, #171717, #59451e);
+  border-bottom: 2px solid var(--gold);
+}
+
+.logo {
+  font-size: 55px;
+}
+
+h1, h2, h3 {
+  color: var(--gold);
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 9px;
+  padding: 15px;
+  background: #222;
+}
+
+button {
+  background: var(--gold);
+  color: #171717;
+  border: none;
+  border-radius: 9px;
+  padding: 12px 17px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #f0d36e;
+}
+
+button:disabled {
+  opacity: 0.7;
+  cursor: default;
+}
+
+main {
+  max-width: 850px;
+  min-height: 65vh;
+  margin: auto;
+  padding: 24px 14px;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid #594a28;
+  border-radius: 14px;
+  padding: 20px;
+  margin: 16px 0;
+  text-align: right;
+  line-height: 2;
+}
+
+.card p {
+  white-space: pre-line;
+}
+
+.poem {
+  background: #33291a;
+  border: 1px solid var(--gold);
+  color: #f6e2aa;
+  padding: 22px 12px;
+  border-radius: 14px;
+  font-family: "Traditional Arabic", Tahoma, serif;
+  font-size: 25px;
+  line-height: 2.3;
+  white-space: pre-line;
+  overflow-wrap: anywhere;
+  text-align: center;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin: 18px 0;
+}
+
+input {
+  width: 100%;
+  padding: 13px;
+  border-radius: 8px;
+  border: 1px solid var(--gold);
+  background: #292929;
+  color: white;
+  font-size: 16px;
+}
+
+mark {
+  background: var(--gold);
+  color: black;
+}
+
+.option {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  background: #393939;
+  color: white;
+  text-align: right;
+}
+
+.correct {
+  background: #267849 !important;
+}
+
+.wrong {
+  background: #973b3b !important;
+}
+
+footer {
+  background: #222;
+  padding: 20px;
+  color: #aaa;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+@media (max-width: 500px) {
+  nav button {
+    flex: 1 1 40%;
+  }
+
+  .card {
+    padding: 15px;
+  }
+}

@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#171717">
+  <meta name="description" content="تطبيق تعليمي عن العصر الجاهلي">
+
+  <title>رحلة إلى العصر الجاهلي</title>
+
+  <link rel="stylesheet" href="./style.css">
+  <link rel="manifest" href="./manifest.json">
+  <link rel="icon" href="./icons/icon-192.png">
+  <link rel="apple-touch-icon" href="./icons/icon-192.png">
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">📜</div>
+     
+    <h1> رحلة الى العصر الجاهلي بواسطة ايدير احمد عبد الرؤوف</h1>
+    <p>اكتشف حياة العرب وروائع الشعر القديم</p>
+  </header>
+
+  <nav>
+    <button onclick="home()">الرئيسية</button>
+    <button onclick="showLessons()">الدروس</button>
+    <button onclick="showPoets()">الشعراء</button>
+    <button onclick="showMuallaqat()">المعلقات السبع</button>
+    <button onclick="showHatim()">حاتم الطائي</button>
+    <button onclick="startQuiz()">الاختبار</button>
+  </nav>
+
+  <main id="content"></main>
+
+  <footer>
+    <button id="installBtn" hidden>تثبيت التطبيق</button>
+    <p>رحلة إلى العصر الجاهلي</p>
+  </footer>
+
+  <script src="./poems.js"></script>
+  <script src="./app.js"></script>
+
+</body>
+</html>
+
